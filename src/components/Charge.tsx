@@ -42,13 +42,11 @@ export default (props: Props) => {
     return (
         <div id="input_container" class="mt-2 max-w-[450px]">
             <div class="flex">
-                <img class="w-30" src="/img/alipay.png" alt="" />
                 <span class="ml-2 text-sm">
                     说明: <br />
-                    当前为自助充值模式, 请使用支付宝扫码<br />
-                    当前价格为1元/60次, 根据需要自行决定支付金额<br />
-                    支付完成后在下方填入支付金额<br />
-                    最后点击自助充值完成充值<br />
+                    自助充值1元/60次, 根据需要自行输入金额<br />
+                    在下方填入金额<br />
+                    点击自助充值完成充值<br />
                 </span>
             </div>
 
