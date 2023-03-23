@@ -216,7 +216,7 @@ export default () => {
       <div>
         <Show when={!isLogin()}>
           <p mt-1 op-60>欢迎来到人工智能时代</p>
-          <p mt-1 op-60>验证邮箱以获取免费额度</p>
+          <p mt-1 op-60>请验证bdeal邮箱以开始使用</p>
         </Show>
       </div>
       <div class="flex items-center">
