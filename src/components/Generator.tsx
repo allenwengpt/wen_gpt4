@@ -43,9 +43,14 @@ export default () => {
             token: localStorage.getItem(`token`)
           }),
         });
-        const responseJson = await response.json();
-        localStorage.setItem("user", JSON.stringify(responseJson.data));
-        setUser(responseJson.data)
+
+        const responseJson = await response.json()
+        if (responseJson.code === 200) {
+          localStorage.setItem('user', JSON.stringify(responseJson.data))
+          setUser(responseJson.data)
+        } else {
+          setIsLogin(false)
+        }
       } else {
         setIsLogin(false)
       }
